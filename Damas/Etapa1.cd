@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Damas.User">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAAACAAAQAAAAQgAAIEAAAAgAgAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Damas.Player">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAgAAAAAAAAgAACAAAAQAg=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="History" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Damas.Bot">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Bot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Damas.Piece">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAIAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAwAAAAAA=</HashCode>
+      <FileName>Piece.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Damas.Game">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <AssociationLine Name="User_2" Type="Damas.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="2.625" />
+        <Point X="5.5" Y="2.625" />
+        <Point X="5.5" Y="2.625" />
+        <Point X="5" Y="2.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="User_1" Type="Damas.User" FixedFromPoint="true">
+      <Path>
+        <Point X="6" Y="1.438" />
+        <Point X="5" Y="1.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AiAgAAAADEAQCAIAAAAAAAAgAAgAAAARiIAAQCAAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User_2" />
+      <Property Name="User_1" />
+      <Property Name="Board1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Damas.History">
+    <Position X="1" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAEAAAAgAAAAAAAAgAAAAAAAAAAAgAAAAABA=</HashCode>
+      <FileName>History.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Damas.Menu">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Menu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Game" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="Damas.Board">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAgAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Board.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Piece" />
+    </ShowAsAssociation>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
